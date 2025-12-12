@@ -1,0 +1,350 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardhi Mahesh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Ardhi Mahesh</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to my Portfolio</h2>
+            <p>Btech in CSE | MBA in IT and System Management</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                An ambitious and results-oriented professional with a strong foundation in Computer Science and Engineering,
+                further enhanced by an MBA in IT and System Management. I bring 4.7 years of experience in technical support
+                from Hewlett Packard, coupled with a passion for leveraging Python for data analysis and machine learning.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>MBA in IT and System Management</h3>
+                <p>Passed out: 2022</p>
+            </div>
+            <div class="education-item">
+                <h3>Btech in CSE</h3>
+                <p>Passed out: 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Technical Support Engineer (L1A)</h3>
+                <p>Hewlett Packard</p>
+                <p>Duration: 4.7 years</p>
+                <ul>
+                    <li>Provided first-level technical assistance and support for computer systems, networks, and other IT infrastructure.</li>
+                    <li>Responded to queries and requests for technical assistance and support.</li>
+                    <li>Diagnosed and resolved technical hardware and software issues.</li>
+                    <li>Walked customers through problem-solving processes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <h3>Programming Languages:</h3>
+                <ul>
+                    <li>Python</li>
+                </ul>
+                <h3>Python Libraries:</h3>
+                <ul>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>Scikit-learn</li>
+                    <li>Keras</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ardhi Mahesh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+---css--
+```css
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #0056b3; /* A professional blue */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    border-bottom: 3px solid #007bff;
+    padding-top: 15px;
+    min-height: 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branding h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header a {
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+header a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 300px;
+    background: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#hero h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 2.8em;
+}
+
+#hero p {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0056b3;
+}
+
+#about p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.education-item,
+.experience-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background-color: #e9f5ff; /* Light blue background for items */
+    border-radius: 5px;
+}
+
+.education-item h3,
+.experience-item h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.experience-item ul li {
+    margin-bottom: 8px;
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skills-list h3 {
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills-list ul {
+    display: inline-block; /* To allow centering */
+    margin: 0 auto;
+    text-align: left; /* Align list items to the left */
+}
+
+.skills-list li {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: inline-block; /* For horizontal display */
+    margin-right: 10px; /* Space between skills */
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    header li {
+        margin: 5px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.2em;
+    }
+
+    #hero p {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .skills-list li {
+        display: block; /* Stack skills on smaller screens */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+```
+---js--
+```js
+// No JavaScript is strictly necessary for this basic portfolio,
+// but you could add interactive features here if needed.
+// For example, smooth scrolling for navigation links:
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+```
